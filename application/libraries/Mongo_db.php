@@ -942,7 +942,7 @@ Class Mongo_db{
 	* Unsets a field (or fields)
 	*
 	* @usage: $this->mongo_db->where(array('blog_id'=>123))->unset('posted')->update('blog_posts');
-	* @usage: $this->mongo_db->where(array('blog_id'=>123))->set(array('posted','time'))->update('blog_posts');
+	* @usage: $this->mongo_db->where(array('blog_id'=>123))->unset(array('posted','time'))->update('blog_posts');
 	*/
 	public function unset_field($fields)
 	{
